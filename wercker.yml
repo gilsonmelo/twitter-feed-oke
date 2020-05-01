@@ -59,4 +59,4 @@ deploy-to-cluster:
         server: $KUBERNETES_MASTER
         token: $KUBERNETES_AUTH_TOKEN
         insecure-skip-tls-verify: true
-        command: apply --token=$KUBERNETES_AUTH_TOKEN -f kubernetes.yml
+        command: apply --v=4 -f kubernetes.yml
